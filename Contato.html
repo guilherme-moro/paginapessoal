@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Contatos</title>
+    <style>
+        * {
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #menu{
+          margin-top: -10px;
+          margin-bottom: -22px;
+          background-color:gold;
+          height: auto;
+        }
+        #parteprincipal{
+          background-color:lightgray;
+          height: 810px;
+        }
+        #finalpagina{
+          margin-top: -16px;
+          background-color:gold;
+          height: 50px;
+        }
+        .texto{
+          color:darkblue;
+        }
+        .campo{
+          padding: 5px;
+          width: 300px;
+          border-width: 1px;
+          border-color: darkblue;
+        }
+        .opcao{
+          padding: 6px;
+          width: 312px;
+          border-color: darkblue;
+        }
+        .txtarea{
+          resize: none;
+          border-color: darkblue;
+        }
+        .botao{
+          padding: 5px;
+          width: 200px;
+          font-weight: bolder;
+          font-size: 15px;
+          border-color: darkblue;
+          margin-left: 35px;
+        }
+        p{
+          margin:0;
+        }
+        
+      </style>
+</head>
+
+<body>
+  <div id="menu">
+    <header>
+      <nav>
+        <hr>
+        <a href="http://localhost:3000/">Dados Pessoais</a>
+        <a href="http://localhost:3000/DadosProfissionais.html">Dados Profissionais</a>
+        <a href="http://localhost:3000/Escolaridade.html">Escolaridade</a>
+        <a href="http://localhost:3000/Disciplinas.html">Disciplinas</a>
+        <hr>
+      </nav>
+    </header>
+  </div>
+
+  <div id="parteprincipal">
+    <h1>Contatos</h1>
+     <ul class="texto"><li><b>Telefone:</b> (19) 995975734<br><br></li>
+     <li><b>Email:</b> guilherme.fer.moro@gmail.com<br><br></li>
+     <li><b>Facebook:</b> <a href="https://www.facebook.com/guifeernandes">https://www.facebook.com/guifeernandes</a><br><br></li>
+     <li><b>Instagram:</b> <a href="https://www.instagram.com/guilherme_feernandes/">https://www.instagram.com/guilherme_feernandes/</a></li></ul>
+
+    <h1>Mande uma mensagem</h1>
+    <form action="http://localhost:3000/email.php" method="get">
+      <p class="texto">Preencha os campos abaixo:</p><br>
+
+      <p class="texto"><b>Nome:</b></p>
+      <input class="campo" type="text" name="nome" required><br><br>
+
+      <p class="texto"><b>Telefone:</b></p>
+      <input class="campo" type="tel" name="fone" maxlength="9" required><br><br>
+
+      <p class="texto"><b>Email:</b></p>
+      <input class="campo" type="email" name="email" required><br><br>
+
+      <p class="texto"><b>Motivo do contato:</b></p>
+      <select class="opcao" name="motivo">
+       <option selected disabled value="">Selecione...</option>
+       <option value="duv">Tirar dúvida</option>
+       <option value="info">Informação</option>
+       <option value="info">Sugestão</option>
+      </select><br><br>
+
+      <p class="texto"><b>Comentários gerais:</b></p>
+      <textarea class="txtarea" rows="7" cols="42" name="comentario">
+      Escreva os seus comentários aqui
+      </textarea>
+
+      <br><br>
+      <input class="botao" type="submit" value="Enviar">
+
+    </form>
+
+  </div>
+  
+  <div id="finalpagina">
+    <footer>
+        <br><p class="texto"><b>Desenvolvido por Guilherme Fernandes Moro</b></p>
+    </footer>
+  </div>  
+
+</body>
